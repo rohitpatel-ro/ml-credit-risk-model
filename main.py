@@ -1,7 +1,7 @@
 import streamlit as st
 from prediction_helper import predict
 
-st.set_page_config(page_title="Lauki Finance: Credit Risk Modelling", page_icon="📊")
+st.set_page_config(page_title="Peso Finance: Credit Risk Modelling", page_icon="📊")
 st.title("Lauki Finance: Credit Risk Modelling")
 
 # Create rows of three columns each
@@ -57,7 +57,7 @@ if st.button('Calculate Risk'):
                                                 residence_type, loan_purpose, loan_type)
 
     # Display the results
-    st.write(f"Deafult Probability: {probability:.2%}")
+    st.write(f"Default Probability: {probability:.2%}")
     st.write(f"Credit Score: {credit_score}")
     st.write(f"Rating: {rating}")
 
